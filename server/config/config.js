@@ -8,6 +8,18 @@ process.env.PORT = process.env.PORT || 3000;
 // ==============================
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
 
+// ==============================
+// Vencimiento del Token
+// ==============================
+// 60 seguntos x 60 minutos x 24 hrs x 30 dias
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+
+
+// ==============================
+// SEED de autenticacion
+// ==============================
+process.env.SEED = process.env.SEED || 'esta-es-el-seed-desarrollo';
+
 
 // ==============================
 // Base de datos
